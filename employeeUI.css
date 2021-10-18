@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 0px solid green;
+    background-color: antiquewhite;
 }
 
 .logo-content {
@@ -51,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 0px solid green;
+    background-color: antiquewhite;
 }
 
 .form {
@@ -121,8 +123,8 @@ label {
     margin-left: 12px;
 }
 
-.select {
-    padding: 12px;
+select {
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
@@ -130,4 +132,47 @@ label {
     letter-spacing: 0px;
     color: #42515f;
     background-color: transparent;
+}
+
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    font: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #707070;
+    cursor: pointer;
+}
+
+.submitButton {
+    border: none;
+    background-color: #42515f;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.resetButton {
+    border: none;
+    background-color: red;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+    background-color: #82a70c;
+    color: #fff;
 }
