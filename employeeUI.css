@@ -64,7 +64,7 @@ body {
 }
 
 .form-head {
-    font: normal normal bold 24px/37px Roboto;
+    font: normal normal bold 24px/37px Times New Roman;
     letter-spacing: 0px;
     color: #42515f;
     text-transform: capitalize;
@@ -93,7 +93,8 @@ label {
     font-size: 16px;
     color: #42515f;
     opacity: 1;
-    font-family: Roboto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .input {
@@ -101,4 +102,21 @@ label {
     padding: 12px;
     border: 1px solid #ccc;
     resize: vertical;
+}
+
+.profile-radio-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content > label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
 }
