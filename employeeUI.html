@@ -95,8 +95,17 @@
             <div class="row-content">
                 <label class="label text" for="salary">Choose your salary:</label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100"
-                    value="400000">
-                <output class="salary-output text" for="salary">400000 </output>
+                    value="salary">
+                <output class="salary-output text" for="salary"><span id="value"></span> </output>
+                <script>
+                    var slider = document.getElementById("salary");
+                    var output = document.getElementById("value");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
             </div>
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date:</label>
